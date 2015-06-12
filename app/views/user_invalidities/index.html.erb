@@ -1,0 +1,31 @@
+<h1>Listing user_invalidities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Userid</th>
+      <th>Invalidityid</th>
+      <th>Grade</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_invalidities.each do |user_invalidity| %>
+      <tr>
+        <td><%= user_invalidity.userId %></td>
+        <td><%= user_invalidity.invalidityId %></td>
+        <td><%= user_invalidity.grade %></td>
+        <td><%= link_to 'Show', user_invalidity %></td>
+        <td><%= link_to 'Edit', edit_user_invalidity_path(user_invalidity) %></td>
+        <td><%= link_to 'Destroy', user_invalidity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User invalidity', new_user_invalidity_path %>

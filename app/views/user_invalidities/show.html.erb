@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @user_invalidity.userId %>
+</p>
+
+<p>
+  <strong>Invalidityid:</strong>
+  <%= @user_invalidity.invalidityId %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @user_invalidity.grade %>
+</p>
+
+<%= link_to 'Edit', edit_user_invalidity_path(@user_invalidity) %> |
+<%= link_to 'Back', user_invalidities_path %>

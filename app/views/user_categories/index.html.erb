@@ -1,0 +1,33 @@
+<h1>Listing user_categories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Userid</th>
+      <th>Categoryid</th>
+      <th>Institutionname</th>
+      <th>City</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_categories.each do |user_category| %>
+      <tr>
+        <td><%= user_category.userId %></td>
+        <td><%= user_category.categoryId %></td>
+        <td><%= user_category.institutionName %></td>
+        <td><%= user_category.city %></td>
+        <td><%= link_to 'Show', user_category %></td>
+        <td><%= link_to 'Edit', edit_user_category_path(user_category) %></td>
+        <td><%= link_to 'Destroy', user_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User category', new_user_category_path %>

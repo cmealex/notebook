@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @user_category.userId %>
+</p>
+
+<p>
+  <strong>Categoryid:</strong>
+  <%= @user_category.categoryId %>
+</p>
+
+<p>
+  <strong>Institutionname:</strong>
+  <%= @user_category.institutionName %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @user_category.city %>
+</p>
+
+<%= link_to 'Edit', edit_user_category_path(@user_category) %> |
+<%= link_to 'Back', user_categories_path %>

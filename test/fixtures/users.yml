@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  firstName: 
+  lastName: 
+  icSerie: 
+  icNumber: 
+  cnp: 
+  sex: 
+  description: MyText
+  nationality: 
+  maritalStatus: 
+  children: 
+  contactId: 
+
+two:
+  firstName: 
+  lastName: 
+  icSerie: 
+  icNumber: 
+  cnp: 
+  sex: 
+  description: MyText
+  nationality: 
+  maritalStatus: 
+  children: 
+  contactId: 

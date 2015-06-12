@@ -1,0 +1,33 @@
+<%= form_for(@due) do |f| %>
+  <% if @due.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@due.errors.count, "error") %> prohibited this due from being saved:</h2>
+
+      <ul>
+      <% @due.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :userId %><br>
+    <%= f.text_field :userId %>
+  </div>
+  <div class="field">
+    <%= f.label :sum %><br>
+    <%= f.text_field :sum %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :dueType %><br>
+    <%= f.text_field :dueType %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @contact_detail.userId %>
+</p>
+
+<p>
+  <strong>Phone1:</strong>
+  <%= @contact_detail.phone1 %>
+</p>
+
+<p>
+  <strong>Phone2:</strong>
+  <%= @contact_detail.phone2 %>
+</p>
+
+<p>
+  <strong>Email1:</strong>
+  <%= @contact_detail.email1 %>
+</p>
+
+<p>
+  <strong>Email2:</strong>
+  <%= @contact_detail.email2 %>
+</p>
+
+<p>
+  <strong>Birthplace:</strong>
+  <%= @contact_detail.birthPlace %>
+</p>
+
+<p>
+  <strong>Residence:</strong>
+  <%= @contact_detail.residence %>
+</p>
+
+<%= link_to 'Edit', edit_contact_detail_path(@contact_detail) %> |
+<%= link_to 'Back', contact_details_path %>

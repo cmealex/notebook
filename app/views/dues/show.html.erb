@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @due.userId %>
+</p>
+
+<p>
+  <strong>Sum:</strong>
+  <%= @due.sum %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @due.date %>
+</p>
+
+<p>
+  <strong>Duetype:</strong>
+  <%= @due.dueType %>
+</p>
+
+<%= link_to 'Edit', edit_due_path(@due) %> |
+<%= link_to 'Back', dues_path %>
